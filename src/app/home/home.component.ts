@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   objectifText: String;
 
 
-  constructor(private monRouteur: Router, private activiteService: ActiviteService) { }
+  constructor(monRouteur: Router, activiteService: ActiviteService) { }
 
   ajoutItem () {
     this.activiteService.objectifs.push(this.objectifText);

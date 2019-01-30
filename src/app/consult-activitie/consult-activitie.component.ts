@@ -14,7 +14,7 @@ export class ConsultActivitieComponent implements OnInit {
   btnText: String = "Supprimer";
   btnRetour: String = "Retour";
 
-  constructor(maRoute: ActivatedRoute, private activiteService: ActiviteService, private monRouteur: Router) {
+  constructor(maRoute: ActivatedRoute, activiteService: ActiviteService, monRouteur: Router) {
     this.parametre1 = activiteService.objectifs[maRoute.snapshot.params["param1"]];
 
 
