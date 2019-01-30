@@ -1,0 +1,7 @@
+<h1>Détails de l'activité</h1>
+<ul>
+  <li>Nom de l'activite : {{ parametre1 }}</li>
+  <li *ngIf="!isParam2Null()">Paramètre 2 : {{ parametre2 }}</li>
+  <input type="button" class="btn" name="removeElement" (click)="removeElem(this.activiteService.objectifs.indexOf(parametre1))" [value]='btnText'>
+  <input type="button" class="btnRetour" name="removeElement" (click)="retourHome()" [value]='btnRetour'>
+</ul>

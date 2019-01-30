@@ -1,0 +1,26 @@
+<ul>
+  <li>
+    <div class="container color-dark">
+      <div class="col">
+        Un élément de liste
+      </div>
+      <div class="col">
+        Ma liste d'éléments ({{nbItems}})
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="container color-light">
+      <div class="col">
+        Un nouvel élément de la liste
+        <form class="" action="index.html" method="post">
+          <input type="text" class="txt" name="objectifText" value="" [(ngModel)]="objectifText">
+          <input type="button" class="btn" name="ajoutElement" (click)="ajoutItem()" [value]='btnText'>
+        </form>
+      </div>
+      <div class="col">
+        <p class="life-container" *ngFor="let obj of activiteService.objectifs; let i = index" (click)="modifItem(i)"> {{obj}} </p>
+      </div>
+    </div>
+  </li>
+</ul>
